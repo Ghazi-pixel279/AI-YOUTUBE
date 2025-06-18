@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: youtube-ai-agent
+    env: python
+    buildCommand: ""
+    startCommand: "python main.py"
+    plan: free gunicorn app:app
